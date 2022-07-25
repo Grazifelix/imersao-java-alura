@@ -15,7 +15,6 @@ public class App {
         HttpRequest request = HttpRequest.newBuilder(endereco).GET().build();
         HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
         String body = response.body();
-        //System.out.println(body);
 
         // extrair só os dados que interessam (titulo, poster, classificação)
         var parser = new JsonParser();
