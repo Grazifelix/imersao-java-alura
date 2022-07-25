@@ -22,9 +22,11 @@ public class App {
         
         // exibir e manipular dados
         for (Map<String,String> filme : listaDeFilmes) {
-            System.out.println(filme.get("title"));
+            System.out.println("\u001b[1m \u001b[37m \u001b[48;2;78;91;223m" + filme.get("title") + "\u001b[m");
             System.out.println(filme.get("image"));
             System.out.println(filme.get("imDbRating"));
+            System.out.println("\uD83D \uDC99");
+            
             System.out.println();            
         }
     }
